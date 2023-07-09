@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Define the source and destination paths
+SOURCE_PATH="/home/anthony/workspace/docker"
+DESTINATION_PATH="/1tb"
+
+# Run rsync to backup the source path to the destination path
+rsync -avz --delete $SOURCE_PATH $DESTINATION_PATH
